@@ -4,7 +4,7 @@
 wget https://raw.githubusercontent.com/HackBio-Internship/wale-home-tasks/main/DNA.fa
 
 # Counting number of sequence in the DNA.fa
- grep ">" DNA.fa | wc -l
+grep ">" DNA.fa | wc -l
 
 # Counting the total number of  A, T, G & C
 grep -v ">" DNA.fa | -E -o "A|T|G|C" | wc -l
